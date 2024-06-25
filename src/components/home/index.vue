@@ -13,7 +13,7 @@
     
 <script setup lang='js'>
     import { reactive, ref } from 'vue'
-    import '@/assets/style/common.less'
+    // import '@/assets/style/common.less'
     import myHeader from '@/components/common/myHeader.vue'
     import myAside from '@/components/common/myAside.vue'
 

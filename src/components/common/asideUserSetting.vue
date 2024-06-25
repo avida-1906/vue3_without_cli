@@ -72,14 +72,34 @@
         border: 1px solid red;
         margin-bottom: 2%;
         background: white;
+
+        .title {  //每一块的标题---加粗字体
+            border-left: 5px solid blue;
+            font-weight: 700;
+        }
+        .countryFlag {  //语言选择按钮的国旗图标
+            margin-bottom: -5%;
+        }
+        div {
+            span {  //每一块里边的单选按钮以及文本或其他
+                min-width: 50%;
+                padding: 2% 0;
+            }
+            .other {  //《其他》这一块里边的跳转按钮列表
+                min-width: 100%;
+                padding: 2% 0;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .language-item {  //语言选择这一块里边的可选语言列表
+            font-size: 14px;
+            min-width: 100%;
+            padding: 3% 0;
+            border-bottom: 2px solid #edf2f7;
+        }
     }
-    .user-setting-item .title {  //每一块的标题---加粗字体
-        border-left: 5px solid blue;
-        font-weight: 700;
-    }
-    .user-setting-item .title .countryFlag {  //语言选择按钮的国旗图标
-        margin-bottom: -5%;
-    }
+    
     .user-setting-item >* {   //每一块里边的子元素---弹性布局
         font-size: @base-font-size;
         padding: 2% 2%;
@@ -87,21 +107,6 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .user-setting-item div span {  //每一块里边的单选按钮以及文本或其他
-        min-width: 50%;
-        padding: 2% 0;
-    }
-    .user-setting-item div .other {  //《其他》这一块里边的跳转按钮列表
-        min-width: 100%;
-        padding: 2% 0;
-        display: flex;
-        justify-content: space-between;
-    }
-    .user-setting-item .language-item {  //语言选择这一块里边的可选语言列表
-        font-size: 14px;
-        min-width: 100%;
-        padding: 3% 0;
-        border-bottom: 2px solid #edf2f7;
-    }
-
+    
+    
 </style>
