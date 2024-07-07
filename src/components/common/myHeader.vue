@@ -1,6 +1,7 @@
 <template>
     <div class="myHeader clearfix">
         <div @click="openMenu">
+            <!-- svg图片可以通过修改它的fill属性的值来更改其颜色 -->
             <svg t="1719231257882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1634" width="20"><path d="M925.2 220H100.4c-18.6 0-33.9-15.2-33.9-33.9s15.2-33.9 33.9-33.9h824.7c18.6 0 33.9 15.2 33.9 33.9 0 18.6-15.2 33.9-33.8 33.9z m-2 323.8H98.4c-18.6 0-33.9-15.2-33.9-33.9S79.7 476 98.4 476h824.7c18.6 0 33.9 15.2 33.9 33.9s-15.2 33.9-33.8 33.9z m2.9 324.8H101.4c-18.6 0-33.9-15.2-33.9-33.9s15.2-33.9 33.9-33.9h824.7c18.6 0 33.9 15.2 33.9 33.9s-15.2 33.9-33.9 33.9z m0 0" p-id="1635" fill="#e6e6e6"></path></svg>
         </div>
         <div class="right_block">
@@ -33,6 +34,14 @@
 </script>
     
 <style scoped lang='less'>
+    /* 
+        less的一些特性：
+            嵌套：子元素的样式可以写到父元素里边
+            定义变量：@xxx: css属性值
+            ::before伪元素前边有&
+            变量有块级作用域
+            变量值可以进行运算
+    */
     //头部背景颜色
     @base-color: #2b50e7;
     
@@ -65,5 +74,7 @@
         display: flex;
         justify-content: space-between;
     }
-    
+    .balance svg {
+        fill: red;
+    }
 </style>

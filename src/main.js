@@ -9,9 +9,16 @@ import App from './App.vue'
 import router from './router'
 // import '@/assets/common.less'
 import store from './store/index.js'  //这里只对vuex做两件事：第一就是引入store文件夹里边的index.js文件
+import ElementPlus from 'element-plus'
+/* 
+    一开始因为这句话导致报错，百度了很久都百度不出答案，然后直接搜：webpack+这句话  就找到答案了。
+    问题就出在webpack.config.js文件里边没有在rules里边给css做配置。
+*/
+import 'element-plus/dist/index.css'
 
 const app = createApp(App)
 
 app.use( router )
 app.use( store )  //第二就是挂载引入的store
+app.use( ElementPlus )  //挂载ElementPlus组件库
 app.mount( '#app' )
